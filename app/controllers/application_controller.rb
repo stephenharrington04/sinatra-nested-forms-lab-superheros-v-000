@@ -9,7 +9,7 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-      @team = Team.new(args)
+      @team = Team.new(params[:name], params[:motto])
 
       params[:team][:heroes].each do |details|
         Superhero.new(details)
