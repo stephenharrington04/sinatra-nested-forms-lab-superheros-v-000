@@ -2,8 +2,8 @@ class Superhero
   attr_reader :name, :power, :bio
   SUPERHEROS = []
 
-  def initialize(name, power, bio)
-    @name = name
+  def initialize(args)
+    @name = argumename
     @power = power
     @bio = bio
     SUPERHEROS << self
